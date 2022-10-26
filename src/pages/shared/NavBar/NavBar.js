@@ -50,7 +50,7 @@ const NavBar = () => {
                             {
                                 user?.uid ? <>
                                     <img className='mx-5' style={{ height: '30px', width:"30px" }} src={user?.photoURL} alt="" />
-                                    <Link to={"/"}><Button onClick={logoutAll} variant="outline-dark">Logout</Button></Link>
+                                    <Link to={"/"}><Button className='mx-3' onClick={logoutAll} variant="outline-dark">Logout</Button></Link>
                                 </> :
                                     <>
                                         <Link className='mx-2' to={"/login"}><Button variant="outline-dark">Login</Button> </Link>

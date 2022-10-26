@@ -10,13 +10,13 @@ const Home = () => {
     return (
         <div>
             <Carousel fade>
-            <Carousel.Item  className='position-relative'>
+            <Carousel.Item  className=' pp' >
                 <img
                 className="d-block w-100 sakib"
                 src={carro_3}
                 alt="First slide"
                 />
-                <Carousel.Caption className='position-absolute bottom-50 end-50"'>
+                <Carousel.Caption className='ss'>
                 <h2>Want to be Software Enginneer?</h2>
                         <p>Monster Tech Courses where you can  You'll learn new programming languages, new ways to use old languages and new tools to make development easier. In addition, you'll be able to learn new things about the industry you are working in.</p>
                         <Link to={'/course'}><Button variant="info" size="lg"> Get Started</Button></Link>
@@ -29,7 +29,7 @@ const Home = () => {
                 alt="Second slide"
                 />
 
-                <Carousel.Caption className='position-absolute bottom-50 end-50"'>
+                <Carousel.Caption className='ss'>
                 <h2>Want to be a Ethical Hacker?</h2>
                         <p>Monster Tech Courses where you can  You'll learn new programming languages, new ways to use old languages and new tools to make development easier. In addition, you'll be able to learn new things about the industry you are working in.</p>
                         <Link to={'/course'}><Button variant="info" size="lg"> Get Started</Button></Link>
@@ -42,7 +42,7 @@ const Home = () => {
                 alt="Third slide"
                 />
 
-                <Carousel.Caption className='position-absolute bottom-50 top-50"'>
+                <Carousel.Caption className='ss'>
                 <h2>Want to be a web Engineer?</h2>
                         <p>Monster Tech Courses where you can  You'll learn new programming languages, new ways to use old languages and new tools to make development easier. In addition, you'll be able to learn new things about the industry you are working in.</p>
                         <Link to={'/course'}><Button variant="info" size="lg"> Get Started</Button></Link>

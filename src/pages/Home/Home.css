@@ -1,3 +1,22 @@
  .sakib{
     height: 93vh;
 }
+
+@media screen and (max-width:700px) {
+    .ss{
+       margin-bottom: 100px;
+    }
+}
+
+
+@media screen and (min-width:960px) {
+    .pp{
+        position: relative;
+    }
+    .ss{
+        position: absolute;
+        bottom: 300px;
+        top: 300px;
+    }
+}
+

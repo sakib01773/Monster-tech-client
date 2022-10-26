@@ -46,7 +46,7 @@ const AuthProvider = ({ children }) => {
         return () =>{
             unScribe()
         } 
-    }, [getAuth])
+    }, [])
 
 
 
