@@ -27,7 +27,10 @@ const NavBar = () => {
                             <Link to={"/course"}>Course</Link>
                             <Link to={"/faq"}>FAQ</Link>
                             <Link to={"/blog"}>Blog</Link>
-                    </Nav>
+                        </Nav>
+                        <Nav className='ms-auto'>
+                            <Link to={"/login"}><button>Login</button></Link>
+                        </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

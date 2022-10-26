@@ -7,6 +7,9 @@ import Blog from './pages/Blog/Blog';
 import Course from "./Layout/Course/Course"
 import RightSide from './pages/RightSide/RightSide';
 import AllCourse from './pages/AllCourse/AllCourse';
+import IndividualCourse from './pages/IndividualCourse/IndividualCourse';
+import Register from './pages/Register/Register';
+import Login from './pages/Login/Login';
 
 function App() {
   const router = createBrowserRouter([
@@ -30,8 +33,13 @@ function App() {
               path: "/course/:id",
               element: <RightSide></RightSide>,
               loader: ({params}) => fetch(`http://localhost:5000/course/${params.id}`)
-            }
+            },
           ]
+        },
+        {
+          path: "/courses/:id",
+          element: <IndividualCourse></IndividualCourse>,
+          loader: ({params}) => fetch(`http://localhost:5000/courses/${params.id}`)
         },
         
         {
@@ -42,6 +50,14 @@ function App() {
           path: "/blog",
           element:<Blog></Blog>
         },
+        {
+          path: "/login",
+          element:<Login></Login>
+        },
+        {
+          path: "/register",
+          element:<Register></Register>
+        }
       ]
     }
   ])
