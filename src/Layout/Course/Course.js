@@ -1,20 +1,22 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Outlet } from 'react-router-dom';
+import LeftSide from '../../pages/shared/LeftSide/LeftSide';
+
 
 const Course = () => {
     return (
         <div>
-            <h2>This Is Course</h2>
-            {/* <Container>
+            <Container>
                 <Row>
                     <Col lg={3}>
-                        <h2>sakib</h2>
+                        <LeftSide></LeftSide>
                     </Col>
                     <Col lg={9}>
-                        <h2>fariha</h2>
+                        <Outlet></Outlet>
                     </Col>
                 </Row>
-            </Container> */}
+            </Container>
         </div>
     );
 };
