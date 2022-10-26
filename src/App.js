@@ -18,6 +18,10 @@ function App() {
       element: <Main></Main>,
       children: [
         {
+          path: "/",
+          element:<Home></Home>
+        },
+        {
           path: "/home",
           element:<Home></Home>
         },
@@ -32,14 +36,14 @@ function App() {
             {
               path: "/course/:id",
               element: <RightSide></RightSide>,
-              loader: ({params}) => fetch(`http://localhost:5000/course/${params.id}`)
+              loader: ({params}) => fetch(`https://monster-tech-website-server.vercel.app/course/${params.id}`)
             },
           ]
         },
         {
           path: "/courses/:id",
           element: <IndividualCourse></IndividualCourse>,
-          loader: ({params}) => fetch(`http://localhost:5000/courses/${params.id}`)
+          loader: ({params}) => fetch(`https://monster-tech-website-server.vercel.app/courses/${params.id}`)
         },
         
         {

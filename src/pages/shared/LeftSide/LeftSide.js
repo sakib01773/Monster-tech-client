@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const LeftSide = () => {
     const [courses, SetCourses] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/course')
+        fetch('https://monster-tech-website-server.vercel.app/course')
         .then(res => res.json())
         .then(data => SetCourses(data))
     },[])
