@@ -76,7 +76,7 @@ const Login = () => {
                 </Form.Group>
                 <div>
                         <p>don't have Account? <Link to={"/register"}>Register</Link> or <br /></p>
-                        <p>Login with: <button onClick={handleGoogleSignIn}><FcGoogle></FcGoogle></button> <button onClick={handleGitHubSignIn}><FaGithub></FaGithub></button></p>
+                        <p>Login with: <button className='border-0 bg-white fs-3' onClick={handleGoogleSignIn}><FcGoogle></FcGoogle></button> <button className='border-0 bg-white fs-3' onClick={handleGitHubSignIn}><FaGithub></FaGithub></button></p>
                 </div>
                 <Button type="submit">Sign in</Button>
             </Form>

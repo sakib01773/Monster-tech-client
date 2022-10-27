@@ -20,7 +20,7 @@ const NavBar = () => {
         .catch(error => console.error(error))
     }
     return (
-        <div className='shadow mb-5 '>
+        <div className='shadow'>
             <Navbar bg="info" expand="lg" className='py-2'>
                 <Container>
                     <Navbar.Brand href="/home">
