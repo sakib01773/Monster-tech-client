@@ -10,6 +10,7 @@ import AllCourse from './pages/AllCourse/AllCourse';
 import IndividualCourse from './pages/IndividualCourse/IndividualCourse';
 import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
+import NotFound from './pages/shared/NotFound/NotFound';
 
 function App() {
   const router = createBrowserRouter([
@@ -63,6 +64,10 @@ function App() {
           element:<Register></Register>
         }
       ]
+    },
+    {
+      path: "*",
+      element:<NotFound></NotFound>
     }
   ])
   return (
