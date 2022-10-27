@@ -11,6 +11,8 @@ import IndividualCourse from './pages/IndividualCourse/IndividualCourse';
 import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
 import NotFound from './pages/shared/NotFound/NotFound';
+import Checkout from './pages/CheckOut/Checkout';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   const router = createBrowserRouter([
@@ -62,7 +64,12 @@ function App() {
         {
           path: "/register",
           element:<Register></Register>
-        }
+        },
+        {
+          path: "/checkout/:id",
+          element: <PrivateRoute><Checkout></Checkout></PrivateRoute>,
+          loader: ({params}) => fetch(`https://monster-tech-website-server.vercel.app/checkout/${params.id}`)
+        },
       ]
     },
     {
