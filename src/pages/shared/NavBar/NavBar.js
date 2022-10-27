@@ -20,8 +20,8 @@ const NavBar = () => {
         .catch(error => console.error(error))
     }
     return (
-        <div>
-            <Navbar bg="info" expand="lg">
+        <div className='shadow mb-5 '>
+            <Navbar bg="info" expand="lg" className='py-2'>
                 <Container>
                     <Navbar.Brand href="/home">
                         <img
@@ -35,7 +35,7 @@ const NavBar = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mx-5 ss">
+                    <Nav className="ss mx-5">
                             <Link to={"/course"}>Course</Link>
                             <Link to={"/faq"}>FAQ</Link>
                             <Link to={"/blog"}>Blog</Link>
@@ -49,8 +49,8 @@ const NavBar = () => {
                         </div>
                             {
                                 user?.uid ? <>
-                                    <img className='mx-5' style={{ height: '30px', width:"30px" }} src={user?.photoURL} alt="" />
-                                    <Link to={"/"}><Button className='mx-3' onClick={logoutAll} variant="outline-dark">Logout</Button></Link>
+                                    <img style={{ height: '30px', width:"30px", marginRight:"30px" }} src={user?.photoURL} alt="" />
+                                    <Link to={"/"}><Button onClick={logoutAll} variant="outline-dark">Logout</Button></Link>
                                 </> :
                                     <>
                                         <Link className='mx-2' to={"/login"}><Button variant="outline-dark">Login</Button> </Link>

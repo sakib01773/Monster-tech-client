@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const LeftSide = () => {
@@ -11,10 +12,10 @@ const LeftSide = () => {
         .then(data => SetCourses(data))
     },[])
     return (
-        <div>
-            <h2>All Courses</h2>
+        <div className='p-3 shadow'style={{position:"sticky", top:"40px"}}>
+            <h2 className='my-3'>All Courses</h2>
             {
-                courses.map(course => <p key={course.id}><Link to={`/course/${course.id}`}>{ course.name}</Link></p> 
+                courses.map(course => <p key={course.id}><Link to={`/course/${course.id}`}><Button variant="outline-info" className='w-100 fw-bold'>{ course.name}</Button>{' '}</Link></p> 
                     
                 )
             }

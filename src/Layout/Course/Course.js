@@ -6,7 +6,7 @@ import LeftSide from '../../pages/shared/LeftSide/LeftSide';
 
 const Course = () => {
     return (
-        <div>
+        <div className='my-5'>
             <Container>
                 <Row>
                     <Col lg={3}>

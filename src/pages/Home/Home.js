@@ -16,7 +16,7 @@ const Home = () => {
                 src={carro_3}
                 alt="First slide"
                 />
-                <Carousel.Caption className='ss'>
+                <Carousel.Caption className='sss'>
                 <h2>Want to be Software Enginneer?</h2>
                         <p>Monster Tech Courses where you can  You'll learn new programming languages, new ways to use old languages and new tools to make development easier. In addition, you'll be able to learn new things about the industry you are working in.</p>
                         <Link to={'/course'}><Button variant="info" size="lg"> Get Started</Button></Link>
@@ -29,7 +29,7 @@ const Home = () => {
                 alt="Second slide"
                 />
 
-                <Carousel.Caption className='ss'>
+                <Carousel.Caption className='sss'>
                 <h2>Want to be a Ethical Hacker?</h2>
                         <p>Monster Tech Courses where you can  You'll learn new programming languages, new ways to use old languages and new tools to make development easier. In addition, you'll be able to learn new things about the industry you are working in.</p>
                         <Link to={'/course'}><Button variant="info" size="lg"> Get Started</Button></Link>
@@ -42,7 +42,7 @@ const Home = () => {
                 alt="Third slide"
                 />
 
-                <Carousel.Caption className='ss'>
+                <Carousel.Caption className='sss'>
                 <h2>Want to be a web Engineer?</h2>
                         <p>Monster Tech Courses where you can  You'll learn new programming languages, new ways to use old languages and new tools to make development easier. In addition, you'll be able to learn new things about the industry you are working in.</p>
                         <Link to={'/course'}><Button variant="info" size="lg"> Get Started</Button></Link>

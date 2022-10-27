@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom';
 const CourseCard = ({ courseDetail }) => {
     const {name,img,_id} = courseDetail
     return (
-        <div className='col-6'>
+        <div className='col-12 col-lg-6'>
                     
-            <Card>
-                <Card.Img height={'400px'} variant="top" src={img} />
+            <Card className='p-3 rounded-4'>
+                <Card.Img className='rounded-5 ' height={'400px'} variant="top" src={img} />
                  <Card.Body>
                     <Card.Title>{name}</Card.Title>
-                    <Link to={`/courses/${_id}`}><Button className='w-100' variant="outline-info">Course Details</Button>{' '} </Link>
+                    <Link to={`/courses/${_id}`}><Button className='w-100 fw-bold' variant="outline-info">Course Details</Button>{' '} </Link>
                 </Card.Body>
             </Card>
             
