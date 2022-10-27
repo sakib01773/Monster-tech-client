@@ -2,16 +2,19 @@ import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import ReactPrint from "react-to-print"
+import { useRef } from 'react';
 
 
 const IndividualCourse = () => {
+    const ref = useRef()
     const coursesDetails = useLoaderData()
     const {details,price,img,name,_id} = coursesDetails
     return (
-        <div className='container'>
+        <div ref={ref} className='container'>
             <div className='my-5 d-flex justify-content-between flex-column  flex-lg-row px-3'>
                 <h1 >Learn {name} With Monster Tech</h1>
-                <Button variant="outline-info">Download</Button>{' '}
+                <ReactPrint trigger={()=><button>download</button>} content={()=>ref.current}></ReactPrint>
             </div>
             <div className=' my-5 shadow rounded'>
             <Card className='border-0 p-2'>
