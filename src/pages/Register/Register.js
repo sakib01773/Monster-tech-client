@@ -29,7 +29,7 @@ const Register = () => {
     }
     return (
         <div className='container'>
-            <div className='w-50 m-auto mt-5 border shadow rounded-4 p-4'>
+            <div className='w-75 m-auto mt-5 border shadow rounded-4 p-4'>
                 <Form onSubmit={handler}>
                 <Form.Group className="mb-3" controlId="formGroupName">
                     <Form.Label>Your Name</Form.Label>
